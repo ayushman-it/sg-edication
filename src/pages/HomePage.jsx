@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom'
 import AnimatedSection from '../components/shared/AnimatedSection'
 import InquiryForm from '../components/shared/InquiryForm'
 import useEnquiryModal from '../components/shared/useEnquiryModal'
-import { assetPath } from '../utils/assets'
+import { assetPath, commonsFilePath } from '../utils/assets'
 import {
   abroadDestinations,
   blogPosts,
@@ -89,6 +89,27 @@ const trustedShowcase = Array.from({ length: 6 }, (_, index) => ({
   label: 'SG Education Solution - Explore Indian & International Colleges',
 }))
 
+const studentShowcase = [
+  {
+    title: 'Real student goals',
+    caption: 'Indian students exploring better-fit colleges with counselling support.',
+    image: commonsFilePath('College Students.jpg'),
+    imagePosition: 'center 25%',
+  },
+  {
+    title: 'Campus-ready guidance',
+    caption: 'A more human look and feel for the journey from search to admission.',
+    image: commonsFilePath('Indian Students 4616.JPG'),
+    imagePosition: 'center 35%',
+  },
+  {
+    title: 'Focused study journey',
+    caption: 'Real academic visuals help the platform feel more grounded and trustworthy.',
+    image: commonsFilePath('Indian student reading.jpg'),
+    imagePosition: 'center 35%',
+  },
+]
+
 function HomePage() {
   const { openEnquiryModal } = useEnquiryModal()
   const [activeCollegeCategory, setActiveCollegeCategory] = useState('All')
@@ -151,6 +172,21 @@ function HomePage() {
                   <article key={item.label}>
                     <strong>{item.value}</strong>
                     <p>{item.label}</p>
+                  </article>
+                ))}
+              </div>
+              <div className="hero-photo-grid">
+                {studentShowcase.map((item) => (
+                  <article className="hero-photo-card" key={item.title}>
+                    <img
+                      alt={item.title}
+                      src={item.image}
+                      style={{ objectPosition: item.imagePosition }}
+                    />
+                    <div>
+                      <strong>{item.title}</strong>
+                      <span>{item.caption}</span>
+                    </div>
                   </article>
                 ))}
               </div>
@@ -360,7 +396,12 @@ function HomePage() {
           {featuredColleges.map((college) => (
             <article className="college-card-pro" key={college.slug}>
               <div className="college-card-media">
-                <img alt={college.name} className="college-card-image" src={college.image} />
+                <img
+                  alt={college.name}
+                  className="college-card-image"
+                  src={college.image}
+                  style={college.imagePosition ? { objectPosition: college.imagePosition } : undefined}
+                />
                 <div className="college-card-overlay">
                   <span>{college.category}</span>
                   <p>{college.badge}</p>

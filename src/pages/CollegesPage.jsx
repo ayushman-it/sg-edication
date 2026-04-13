@@ -105,7 +105,12 @@ function CollegesPage() {
           {filteredColleges.map((college) => (
             <article className="college-card-pro" key={college.slug}>
               <div className="college-card-media">
-                <img alt={college.name} className="college-card-image" src={college.image} />
+                <img
+                  alt={college.name}
+                  className="college-card-image"
+                  src={college.image}
+                  style={college.imagePosition ? { objectPosition: college.imagePosition } : undefined}
+                />
                 <div className="college-card-overlay">
                   <span>{college.category}</span>
                   <p>{college.badge}</p>

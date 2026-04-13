@@ -21,6 +21,7 @@ import { Link } from 'react-router-dom'
 import AnimatedSection from '../components/shared/AnimatedSection'
 import InquiryForm from '../components/shared/InquiryForm'
 import useEnquiryModal from '../components/shared/useEnquiryModal'
+import { assetPath } from '../utils/assets'
 import {
   abroadDestinations,
   blogPosts,
@@ -48,16 +49,16 @@ const careerIcons = {
 }
 
 const careerVisuals = {
-  Management: '/career-business.svg',
-  Science: '/career-science.svg',
-  Engineering: '/career-engineering.svg',
-  Medical: '/career-medical.svg',
-  Commerce: '/career-business.svg',
-  Arts: '/career-arts.svg',
-  Paramedical: '/career-medical.svg',
-  Education: '/career-education.svg',
-  Dental: '/career-medical.svg',
-  'Computer Science': '/career-technology.svg',
+  Management: assetPath('career-business.svg'),
+  Science: assetPath('career-science.svg'),
+  Engineering: assetPath('career-engineering.svg'),
+  Medical: assetPath('career-medical.svg'),
+  Commerce: assetPath('career-business.svg'),
+  Arts: assetPath('career-arts.svg'),
+  Paramedical: assetPath('career-medical.svg'),
+  Education: assetPath('career-education.svg'),
+  Dental: assetPath('career-medical.svg'),
+  'Computer Science': assetPath('career-technology.svg'),
 }
 
 const whyChooseCards = [
@@ -166,7 +167,7 @@ function HomePage() {
         <div className="career-grid">
           {careerPaths.map((path) => {
             const Icon = careerIcons[path.label] || GraduationCap
-            const artwork = careerVisuals[path.label] || '/career-education.svg'
+            const artwork = careerVisuals[path.label] || assetPath('career-education.svg')
 
             return (
               <Link className={`career-card tone-${path.color}`} key={path.slug} to={`/courses?category=${encodeURIComponent(path.label)}`}>
@@ -285,7 +286,7 @@ function HomePage() {
 
           <div className="why-choose-panel">
             <div className="why-panel-brand">
-              <img alt="SG Education Solution logo" src="/sg-logo.png" />
+              <img alt="SG Education Solution logo" src={assetPath('sg-logo.png')} />
               <div>
                 <strong>SG Education Solution</strong>
                 <p>Explore Indian & International Colleges</p>
@@ -322,7 +323,7 @@ function HomePage() {
           <div className="trusted-grid">
             {trustedShowcase.map((item) => (
               <article className="trusted-item" key={item.id}>
-                <img alt="SG Education Solution mark" src="/sg-logo.png" />
+                <img alt="SG Education Solution mark" src={assetPath('sg-logo.png')} />
                 <span>{item.label}</span>
               </article>
             ))}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { assetPath } from '../../utils/assets'
 
 function AppLoader({ children }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -24,7 +25,7 @@ function AppLoader({ children }) {
       {isLoading ? (
         <div className={isLeaving ? 'app-loader is-leaving' : 'app-loader'} role="status" aria-live="polite">
           <div className="app-loader-panel">
-            <img alt="SG Education Solution" className="app-loader-logo" src="/sg-logo.png" />
+            <img alt="SG Education Solution" className="app-loader-logo" src={assetPath('sg-logo.png')} />
             <div className="app-loader-copy">
               <strong>SG Education Solution</strong>
               <p>Preparing colleges, courses, exams, and counselling journeys.</p>

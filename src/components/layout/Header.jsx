@@ -20,6 +20,7 @@ import {
 import { startTransition, useDeferredValue, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { countryShortcuts, navigation, searchIndex, siteMeta, topLinks } from '../../data/siteData'
+import { assetPath } from '../../utils/assets'
 import { matchesSearch } from '../../utils/helpers'
 import useEnquiryModal from '../shared/useEnquiryModal'
 import SearchDropdown from '../shared/SearchDropdown'
@@ -45,21 +46,21 @@ const megaMenuMeta = {
     description: 'Browse major study fields with a cleaner, icon-led navigation experience.',
     featuredTitle: 'Verified college discovery',
     featuredText: 'Use stream-based shortlisting to move faster from browsing into counselling.',
-    image: '/mega-colleges.svg',
+    image: assetPath('mega-colleges.svg'),
   },
   Courses: {
     title: 'Explore professional courses',
     description: 'Category-first course discovery built to feel more precise and easier to scan.',
     featuredTitle: 'Better course navigation',
     featuredText: 'Students can jump to MBBS, B.Tech, MBA, law, and allied-health paths quickly.',
-    image: '/mega-courses.svg',
+    image: assetPath('mega-courses.svg'),
   },
   Exams: {
     title: 'Entrance exams by stream',
     description: 'Scan national tests and exam categories through a tighter mega menu layout.',
     featuredTitle: 'Exam-led pathways',
     featuredText: 'Map exams directly to study streams like medical, engineering, management, and science.',
-    image: '/mega-exams.svg',
+    image: assetPath('mega-exams.svg'),
   },
 }
 
@@ -117,7 +118,7 @@ function Header() {
 
       <div className="navbar">
         <Link className="brandmark" onClick={closePanels} to="/">
-          <img alt="SG Education Solution" className="brandmark-logo" src="/sg-logo.png" />
+          <img alt="SG Education Solution" className="brandmark-logo" src={assetPath('sg-logo.png')} />
           <div>
             <strong>{siteMeta.brand}</strong>
             <small>India + abroad counselling platform</small>
@@ -308,7 +309,7 @@ function Header() {
             >
               <div className="mobile-drawer-head">
                 <Link className="brandmark mobile-brandmark" onClick={closePanels} to="/">
-                  <img alt="SG Education Solution" className="brandmark-logo" src="/sg-logo.png" />
+                  <img alt="SG Education Solution" className="brandmark-logo" src={assetPath('sg-logo.png')} />
                   <div>
                     <strong>{siteMeta.brand}</strong>
                     <p>Browse pages, streams, and destinations</p>

@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { MessageCircle, X } from 'lucide-react'
 import { colleges, courses, nationalDestinations, siteMeta } from '../../data/siteData'
 import { simulateSubmission } from '../../services/api'
+import { assetPath } from '../../utils/assets'
 import EnquiryModalContext from './EnquiryModalContext'
 
 const initialFormState = {
@@ -75,7 +76,7 @@ function EnquiryModal({ isOpen, onClose }) {
         <div className="enquiry-modal-grid">
           <aside className="enquiry-modal-aside">
             <div className="enquiry-modal-brand">
-              <img alt="SG Education Solution" className="enquiry-modal-logo" src="/sg-logo.png" />
+              <img alt="SG Education Solution" className="enquiry-modal-logo" src={assetPath('sg-logo.png')} />
               <span className="enquiry-modal-chip">GET STARTED</span>
             </div>
             <div className="enquiry-modal-copy">

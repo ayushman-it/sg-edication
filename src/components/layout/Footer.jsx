@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { footerGroups, siteMeta } from '../../data/siteData'
+import { assetPath } from '../../utils/assets'
 
 function Footer() {
   return (
@@ -23,7 +24,7 @@ function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <div className="brandmark footer-brandmark">
-            <img alt="SG Education Solution" className="brandmark-logo" src="/sg-logo.png" />
+            <img alt="SG Education Solution" className="brandmark-logo" src={assetPath('sg-logo.png')} />
             <div>
               <strong>{siteMeta.brand}</strong>
               <small>Find the right colleges and career path</small>

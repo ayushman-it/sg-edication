@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom'
 import AnimatedSection from '../components/shared/AnimatedSection'
 import Breadcrumbs from '../components/shared/Breadcrumbs'
 import useEnquiryModal from '../components/shared/useEnquiryModal'
+import { assetPath } from '../utils/assets'
 
 const trustedMarks = Array.from({ length: 4 }, (_, index) => ({
   id: `about-trust-${index + 1}`,
@@ -101,7 +102,7 @@ function AboutPage() {
 
           <div className="about-hero-panel">
             <div className="about-hero-brand">
-              <img alt="SG Education Solution logo" src="/sg-logo.png" />
+              <img alt="SG Education Solution logo" src={assetPath('sg-logo.png')} />
               <div>
                 <strong>#EkKadamNayiRaahKiAur</strong>
                 <p>Trusted guidance for Indian and international college discovery.</p>
@@ -111,7 +112,7 @@ function AboutPage() {
             <div className="about-trusted-grid">
               {trustedMarks.map((item) => (
                 <article className="about-trusted-card" key={item.id}>
-                  <img alt="SG Education Solution mark" src="/sg-logo.png" />
+                  <img alt="SG Education Solution mark" src={assetPath('sg-logo.png')} />
                   <span>{item.label}</span>
                 </article>
               ))}

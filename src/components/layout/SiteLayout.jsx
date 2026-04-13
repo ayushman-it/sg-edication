@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Footer from './Footer'
 import Header from './Header'
+import MobileBottomNav from './MobileBottomNav'
 import { EnquiryModalProvider } from '../shared/EnquiryModalProvider'
 import PageSkeleton from '../shared/PageSkeleton'
 
@@ -28,12 +29,13 @@ function SiteLayout() {
     <EnquiryModalProvider>
       <div className="site-shell">
         <Header />
-        <main>
+        <main className="site-main">
           <RouteViewport key={`${location.pathname}${location.search}`}>
             <Outlet />
           </RouteViewport>
         </main>
         <Footer />
+        <MobileBottomNav />
       </div>
     </EnquiryModalProvider>
   )

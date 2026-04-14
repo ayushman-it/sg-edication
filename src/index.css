@@ -3229,7 +3229,7 @@ button {
 
   .enquiry-modal-backdrop {
     padding: 8px;
-    place-items: start center;
+    place-items: center;
   }
 
   .enquiry-modal {

@@ -155,6 +155,23 @@ function HomePage() {
                 ))}
               </div>
             </div>
+
+            <div className="hero-photo-grid hero-photo-grid-left">
+              {studentShowcase.map((item) => (
+                <article className="hero-photo-card" key={item.title}>
+                  <div className="hero-photo-copy">
+                    <strong>{item.title}</strong>
+                    <span>{item.caption}</span>
+                  </div>
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src={item.image}
+                    style={{ objectPosition: item.imagePosition }}
+                  />
+                </article>
+              ))}
+            </div>
           </div>
 
           <div className="hero-display replica-display">
@@ -173,22 +190,6 @@ function HomePage() {
                   <article key={item.label}>
                     <strong>{item.value}</strong>
                     <p>{item.label}</p>
-                  </article>
-                ))}
-              </div>
-              <div className="hero-photo-grid">
-                {studentShowcase.map((item) => (
-                  <article className="hero-photo-card" key={item.title}>
-                    <div className="hero-photo-copy">
-                      <strong>{item.title}</strong>
-                      <span>{item.caption}</span>
-                    </div>
-                    <img
-                      alt=""
-                      aria-hidden="true"
-                      src={item.image}
-                      style={{ objectPosition: item.imagePosition }}
-                    />
                   </article>
                 ))}
               </div>

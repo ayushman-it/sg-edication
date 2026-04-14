@@ -874,6 +874,11 @@ button {
   margin-top: 14px;
 }
 
+.hero-photo-grid-left {
+  max-width: 640px;
+  margin-top: 22px;
+}
+
 .hero-photo-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 116px;

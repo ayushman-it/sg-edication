@@ -97,7 +97,7 @@ function ExamsPage() {
       <AnimatedSection className="content-section muted">
         <InquiryForm
           compact
-          subtitle="This block stays ready for exam-help or counselling submissions via PHP later."
+          subtitle="Tell us your target course or exam, and our team will help you plan the next step."
           title="Need help choosing the right entrance exam?"
         />
       </AnimatedSection>

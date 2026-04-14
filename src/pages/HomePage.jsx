@@ -133,9 +133,10 @@ function HomePage() {
         <div className="hero-grid replica-hero-grid">
           <div className="hero-copy replica-copy">
             <p className="eyebrow">Best platform to find your dream course and colleges</p>
-            <h1>Explore colleges, courses, and study destinations with a cleaner, more precise SG Education interface.</h1>
+            <h1>Explore colleges, courses, and study destinations with confidence.</h1>
             <p className="hero-description">
-              Search by category, discover India and abroad options, compare exams, and move into counselling through a more professional responsive layout.
+              Search by category, compare options in India and abroad, and get counselling support
+              for your next academic move.
             </p>
             <div className="hero-action-cluster">
               <div className="hero-actions">
@@ -245,7 +246,7 @@ function HomePage() {
                 <span>{state.options}</span>
               </div>
               <h3>{state.label}</h3>
-              <p>Responsive listing blocks designed for high-volume state and city discovery.</p>
+              <p>Explore leading colleges and courses across major states and student cities.</p>
             </article>
           ))}
         </div>
@@ -254,7 +255,7 @@ function HomePage() {
       <AnimatedSection className="content-section">
         <div className="section-heading left">
           <p className="eyebrow">Popular abroad studies</p>
-          <h2>A cleaner replica of the study-abroad exploration pattern from the live site.</h2>
+          <h2>Compare popular study destinations for MBBS, management, engineering, and more.</h2>
         </div>
         <div className="destination-grid">
           {abroadDestinations.map((country) => (
@@ -447,7 +448,7 @@ function HomePage() {
       <AnimatedSection className="content-section">
         <div className="section-heading left">
           <p className="eyebrow">Top exams</p>
-          <h2>Exam cards now mirror the live site more closely and remain easy to scan on mobile.</h2>
+          <h2>Quickly compare key entrance exams and decide what to prepare for next.</h2>
         </div>
         <div className="exam-filter-row">
           {examStreams.map((stream) => (
@@ -531,10 +532,10 @@ function HomePage() {
       <AnimatedSection className="content-section muted">
         <div className="section-heading left">
           <p className="eyebrow">Application form</p>
-          <h2>Ask questions, shortlist faster, and keep the form ready for PHP submission later.</h2>
+          <h2>Ask questions, shortlist faster, and get personal guidance for your next step.</h2>
         </div>
         <InquiryForm
-          subtitle="This redesigned form block can later post directly to your PHP backend without changing the UI."
+          subtitle="Tell us what you want to study and our team will help you plan the right path."
           title="Need guidance to select the right course or college?"
         />
       </AnimatedSection>

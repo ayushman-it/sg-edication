@@ -881,7 +881,7 @@ const faqItems = [
   {
     question: 'Do you guide students for India and abroad both?',
     answer:
-      'Yes. The redesigned frontend covers Indian college discovery as well as selected abroad destinations and application support.',
+      'Yes. We help students explore colleges in India as well as selected study-abroad destinations and application support.',
   },
   {
     question: 'Can students search by category like MBBS, B.Tech, MBA, or exams?',
@@ -889,9 +889,9 @@ const faqItems = [
       'Yes. The homepage, dropdown menus, filters, and search all support category-led discovery so students can move faster.',
   },
   {
-    question: 'Is this frontend ready for PHP integration later?',
+    question: 'How can I start my counselling process?',
     answer:
-      'Yes. Search, enquiry forms, blog content, and listing sections are structured so PHP APIs or admin panels can replace the static data later.',
+      'Use the enquiry form or WhatsApp support to share your goals, and our team will guide you on the next steps.',
   },
 ]
 
@@ -910,15 +910,15 @@ const admissionsSteps = [
   },
   {
     title: 'Admission and next steps',
-    description: 'Move into offer handling, counselling, and future PHP-powered status tracking.',
+    description: 'Move into offer handling, counselling, and admission confirmation with confidence.',
   },
 ]
 
 const backendSpace = [
-  'Lead capture endpoints for forms and callbacks',
-  'Dynamic college, course, and exam feeds',
-  'Admin-managed news, blogs, and home sections',
-  'Search indexing and analytics with PHP APIs',
+  'Fast responses for student enquiries and callbacks',
+  'Fresh college, course, and exam information',
+  'Helpful updates, news, and admission guidance',
+  'Smarter search and discovery across study options',
 ]
 
 const whyChoosePoints = [
@@ -964,7 +964,7 @@ const footerGroups = [
 
 const spotlightMetrics = [
   { value: '10,000+', label: 'Students can browse a wider college universe from one place' },
-  { value: '12+', label: 'Responsive sections built to scale into backend-driven modules' },
+  { value: '12+', label: 'Popular study categories and guidance paths for faster shortlisting' },
   { value: '24/7', label: 'Site structure designed to support student enquiries anytime' },
 ]
 

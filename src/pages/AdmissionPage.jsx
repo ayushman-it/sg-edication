@@ -8,7 +8,7 @@ function AdmissionPage() {
     <>
       <PageHero
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Direct Admission' }]}
-        description="A direct admission page that turns interest into action, with clear steps, counselling reassurance, and frontend-ready lead capture."
+        description="A direct admission journey with clear steps, counselling reassurance, and personal support."
         eyebrow="Direct Admission"
         primaryCta={{ label: 'Submit enquiry', href: '/contact' }}
         secondaryCta={{ label: 'Browse countries', href: '/countries' }}
@@ -44,7 +44,7 @@ function AdmissionPage() {
 
       <AnimatedSection className="content-section muted">
         <InquiryForm
-          subtitle="Use this frontend form to capture direct-admission leads today. Connect it to PHP when backend work starts."
+          subtitle="Share your goals and our team will guide you through the direct admission process."
           title="Request direct admission assistance"
         />
       </AnimatedSection>

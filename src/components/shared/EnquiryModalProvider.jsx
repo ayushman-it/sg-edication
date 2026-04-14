@@ -194,9 +194,7 @@ function EnquiryModal({ isOpen, onClose }) {
                 {status === 'loading' ? 'Submitting...' : 'Submit'}
               </button>
 
-              {status === 'success' ? (
-                <p className="success-copy">Your enquiry is captured and ready to connect to the PHP backend later.</p>
-              ) : null}
+              {status === 'success' ? <p className="success-copy">Your enquiry has been received. Our team will contact you soon.</p> : null}
 
               <div className="modal-divider">
                 <span>OR</span>

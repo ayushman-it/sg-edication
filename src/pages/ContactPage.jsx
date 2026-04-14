@@ -1,14 +1,14 @@
 import AnimatedSection from '../components/shared/AnimatedSection'
 import InquiryForm from '../components/shared/InquiryForm'
 import PageHero from '../components/shared/PageHero'
-import { phpEndpoints } from '../services/api'
+import { siteMeta } from '../data/siteData'
 
 function ContactPage() {
   return (
     <>
       <PageHero
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Contact Us' }]}
-        description="A dedicated contact experience for callbacks, counselling, and student enquiries, with obvious backend placeholders for PHP integration."
+        description="Reach our team for counselling, callbacks, and admission support."
         eyebrow="Contact"
         primaryCta={{ label: 'Send enquiry below', href: '/contact' }}
         secondaryCta={{ label: 'View direct admission', href: '/direct-admission' }}
@@ -16,19 +16,19 @@ function ContactPage() {
       >
         <div className="hero-panel-stack">
           <article>
-            <span>Lead endpoint</span>
-            <strong>{phpEndpoints.enquiry}</strong>
+            <span>Call us</span>
+            <strong>{siteMeta.phone}</strong>
           </article>
           <article>
-            <span>Callback endpoint</span>
-            <strong>{phpEndpoints.callback}</strong>
+            <span>Email support</span>
+            <strong>{siteMeta.email}</strong>
           </article>
         </div>
       </PageHero>
 
       <AnimatedSection className="content-section">
         <InquiryForm
-          subtitle="This page is already structured like a production contact form and can be connected to PHP APIs later."
+          subtitle="Share your details and our counselling team will reach out with the next steps."
           title="Speak with the SG Education Solution team"
         />
       </AnimatedSection>

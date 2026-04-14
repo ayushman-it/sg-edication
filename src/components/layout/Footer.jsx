@@ -7,13 +7,13 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-hero">
         <div>
-          <p className="eyebrow">Let's build the next step</p>
-          <h2>A more faithful, student-friendly replica with space for your PHP backend.</h2>
+          <p className="eyebrow">Start your next step</p>
+          <h2>Get clear guidance for colleges, courses, and study destinations.</h2>
         </div>
         <div className="footer-hero-copy">
           <p>
-            This frontend now mirrors the live SG Education Solution information flow more closely
-            while staying faster, cleaner, and easier to scale.
+            From first shortlist to final application, SG Education Solution helps students and
+            families move ahead with confidence.
           </p>
           <Link className="secondary-button light" to="/direct-admission">
             Start application
@@ -50,8 +50,8 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Frontend redesigned in React with responsive layouts and search-driven discovery.</p>
-        <p>Forms, content, and search are ready to connect to PHP APIs later.</p>
+        <p>Explore colleges, courses, exams, and study-abroad options in one place.</p>
+        <p>Get support for counselling, applications, and planning your next academic move.</p>
       </div>
     </footer>
   )

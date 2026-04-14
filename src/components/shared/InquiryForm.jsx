@@ -19,7 +19,7 @@ function InquiryForm({ title, subtitle, compact = false }) {
         </div>
         <div className="inquiry-card-actions">
           <button className="primary-button" onClick={openEnquiryModal} type="button">
-            Open enquiry modal
+            Send enquiry
           </button>
           <a className="whatsapp-button muted" href={whatsappHref} rel="noreferrer" target="_blank">
             <MessageCircle size={16} />

@@ -16,7 +16,7 @@ function BlogPage() {
     <>
       <PageHero
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Blogs' }]}
-        description="A blog layout that looks editorial, stays readable on mobile, and can later be connected to a PHP-driven CMS."
+        description="Browse student-friendly articles, admission updates, and planning tips in one place."
         eyebrow="Insights and Resources"
         primaryCta={{ label: 'Read latest posts', href: '/blog' }}
         secondaryCta={{ label: 'Contact us', href: '/contact' }}
@@ -28,8 +28,8 @@ function BlogPage() {
             <strong>Editorial and clean</strong>
           </article>
           <article>
-            <span>Future ready</span>
-            <strong>CMS-backed blog space</strong>
+            <span>Content</span>
+            <strong>Guides, updates, and admission tips</strong>
           </article>
         </div>
       </PageHero>

@@ -18,7 +18,7 @@ function SearchResultsPage() {
           { label: 'Home', href: '/' },
           { label: 'Search' },
         ]}
-        description="A global search experience with grouped results and responsive browsing. This is ready to swap from local data to PHP-powered search later."
+        description="Use one search to explore colleges, courses, countries, exams, and student resources."
         eyebrow="Global Search"
         primaryCta={{ label: 'Browse all pages', href: '/' }}
         secondaryCta={{ label: 'Contact us', href: '/contact' }}
@@ -31,7 +31,7 @@ function SearchResultsPage() {
           </article>
           <article>
             <span>Source</span>
-            <strong>Frontend data now, PHP later</strong>
+            <strong>Colleges, courses, exams, and more</strong>
           </article>
         </div>
       </PageHero>

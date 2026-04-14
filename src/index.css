@@ -876,21 +876,27 @@ button {
 
 .hero-photo-card {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 116px;
+  gap: 16px;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: linear-gradient(180deg, #ffffff, #f4faf6);
+  overflow: hidden;
 }
 
 .hero-photo-card img {
   width: 100%;
-  height: 82px;
+  height: 94px;
   border-radius: 12px;
   object-fit: cover;
   display: block;
+}
+
+.hero-photo-copy {
+  display: grid;
+  gap: 4px;
 }
 
 .hero-photo-card strong {
@@ -903,7 +909,6 @@ button {
 
 .hero-photo-card span {
   display: block;
-  margin-top: 4px;
   color: var(--muted);
   font-size: 0.75rem;
   line-height: 1.5;
@@ -3018,6 +3023,15 @@ button {
     border-bottom: 1px solid var(--line);
   }
 
+  .hero-photo-card {
+    grid-template-columns: minmax(0, 1fr) 96px;
+    gap: 12px;
+  }
+
+  .hero-photo-card img {
+    height: 86px;
+  }
+
   .enquiry-modal-backdrop {
     padding: 10px;
     place-items: center;
@@ -3204,6 +3218,15 @@ button {
 }
 
 @media (max-width: 560px) {
+  .hero-photo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo-card img {
+    order: -1;
+    height: 160px;
+  }
+
   .enquiry-modal-backdrop {
     padding: 8px;
     place-items: start center;

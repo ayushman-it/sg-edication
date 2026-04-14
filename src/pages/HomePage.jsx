@@ -179,15 +179,16 @@ function HomePage() {
               <div className="hero-photo-grid">
                 {studentShowcase.map((item) => (
                   <article className="hero-photo-card" key={item.title}>
-                    <img
-                      alt={item.title}
-                      src={item.image}
-                      style={{ objectPosition: item.imagePosition }}
-                    />
-                    <div>
+                    <div className="hero-photo-copy">
                       <strong>{item.title}</strong>
                       <span>{item.caption}</span>
                     </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src={item.image}
+                      style={{ objectPosition: item.imagePosition }}
+                    />
                   </article>
                 ))}
               </div>
